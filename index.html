@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyntra &mdash; Dermatologically Advanced Skin &amp; Hair Care</title>
+<meta name="description" content="Skyntra is a clinical-grade dermatological skin &amp; hair care range formulated for dermatologists and medical practices across India.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ ROOT / RESET ============ */
+:root {
+    --primary: #0f3d3e;        /* deep emerald */
+    --primary-dark: #0a2a2b;
+    --primary-soft: #1b5254;
+    --sage: #8aa68f;
+    --gold: #b89968;           /* champagne gold */
+    --gold-light: #d4b98a;
+    --ivory: #faf7f2;
+    --cream: #f4efe7;
+    --line: #e8e1d4;
+    --text: #1a1a1a;
+    --text-soft: #5a5a5a;
+    --text-muted: #8a8478;
+    --shadow-sm: 0 4px 20px rgba(15, 61, 62, 0.06);
+    --shadow-md: 0 12px 40px rgba(15, 61, 62, 0.10);
+    --shadow-lg: 0 30px 80px rgba(15, 61, 62, 0.15);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: -0.01em;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+/* ============ TOP BAR ============ */
+.topbar {
+    background: var(--primary-dark);
+    color: #d9cfb8;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 9px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar a { color: #d9cfb8; transition: color .3s; }
+.topbar a:hover { color: var(--gold-light); }
+.topbar-right span { margin-left: 22px; }
+
+/* ============ NAVBAR ============ */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(250, 247, 242, 0.92);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid var(--line);
+}
+
+.logo img { height: 58px; }
+
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-links a {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    position: relative;
+    transition: color .3s;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -6px;
+    width: 0; height: 1.5px;
+    background: var(--gold);
+    transition: width .3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-cta {
+    background: var(--primary);
+    color: var(--ivory) !important;
+    padding: 11px 22px;
+    border-radius: 2px;
+    font-size: 13px !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background .3s;
+}
+.nav-cta:hover { background: var(--gold) !important; color: var(--primary-dark) !important; }
+.nav-cta::after { display: none; }
+
+.hamburger { display: none; cursor: pointer; font-size: 26px; color: var(--primary); background: none; border: none; }
+
+/* ============ HERO ============ */
+.hero {
+    position: relative;
+    background: linear-gradient(120deg, #0f3d3e 0%, #1b5254 65%, #2a6e6e 100%);
+    padding: 100px 60px 120px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(184,153,104,0.18), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -150px;
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, rgba(138,166,143,0.15), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-container {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.hero-text .eyebrow::before {
+    content: ''; width: 32px; height: 1px; background: var(--gold-light);
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    line-height: 1.08;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+.hero-text h1 .italic {
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight: 500;
+}
+
+.hero-text p.lead {
+    font-size: 17px;
+    color: rgba(255,255,255,0.82);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all .35s cubic-bezier(.2,.8,.2,1);
+    cursor: pointer;
+    border: none;
+}
+.btn-primary {
+    background: var(--gold);
+    color: var(--primary-dark);
+}
+.btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(184,153,104,0.35);
+}
+.btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.btn-outline:hover {
+    background: #fff;
+    color: var(--primary);
+    border-color: #fff;
+}
+.btn-dark {
+    background: var(--primary);
+    color: var(--ivory);
+}
+.btn-dark:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 4px;
+    box-shadow: 0 40px 90px rgba(0,0,0,0.45);
+    filter: saturate(1.05);
+}
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 20px; right: -20px;
+    width: 100%; height: 100%;
+    max-width: 480px;
+    border: 1px solid rgba(184,153,104,0.4);
+    border-radius: 4px;
+}
+.hero-badge {
+    position: absolute;
+    bottom: 30px; left: -20px;
+    background: rgba(250,247,242,0.97);
+    backdrop-filter: blur(10px);
+    padding: 18px 22px;
+    border-radius: 3px;
+    box-shadow: var(--shadow-md);
+    border-left: 3px solid var(--gold);
+}
+.hero-badge strong {
+    display: block;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+}
+.hero-badge span {
+    font-size: 11px;
+    color: var(--text-soft);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* ============ TRUST BAR ============ */
+.trust-bar {
+    background: var(--ivory);
+    padding: 40px 40px;
+    border-bottom: 1px solid var(--line);
+}
+.trust-container {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.trust-item { text-align: center; }
+.trust-item .icon {
+    font-size: 28px;
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+.trust-item h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+.trust-item p {
+    font-size: 12.5px;
+    color: var(--text-soft);
+    letter-spacing: 0.02em;
+}
+
+/* ============ SECTION BASE ============ */
+.section {
+    padding: 110px 40px;
+    position: relative;
+}
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.section-head { text-align: center; margin-bottom: 70px; }
+.section-head .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.section-head .eyebrow::before,
+.section-head .eyebrow::after {
+    content: ''; width: 30px; height: 1px; background: var(--gold);
+}
+.section-head h2 {
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+.section-head h2 .italic {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+}
+.section-head p {
+    max-width: 640px;
+    margin: auto;
+    color: var(--text-soft);
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* ============ ABOUT ============ */
+.about {
+    background: var(--ivory);
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+.about-image {
+    position: relative;
+    height: 520px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.about-image::before {
+    content: 'Clinical Science';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    color: rgba(184,153,104,0.2);
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+    font-style: italic;
+    white-space: nowrap;
+    letter-spacing: -0.03em;
+}
+.about-image::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 1px solid rgba(184,153,104,0.3);
+    border-radius: 2px;
+}
+.about-image .badge-stat {
+    position: absolute;
+    bottom: 40px; left: 40px;
+    color: var(--ivory);
+    z-index: 2;
+}
+.about-image .badge-stat strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--gold-light);
+    display: block;
+    line-height: 1;
+}
+.about-image .badge-stat span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: rgba(255,255,255,0.75);
+}
+
+.about-text .eyebrow {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+.about-text h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+.about-text h2 .italic { font-style: italic; color: var(--gold); font-weight: 500; }
+.about-text p {
+    color: var(--text-soft);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+.about-pillars {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.pillar {
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+}
+.pillar .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--gold);
+    font-style: italic;
+    display: block;
+    margin-bottom: 8px;
+}
+.pillar h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+}
+.pillar p {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ============ PRODUCTS ============ */
+.products { background: var(--cream); }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(.2,.8,.2,1);
+    cursor: pointer;
+    position: relative;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--gold-light);
+}
+.product-media {
+    background: linear-gradient(180deg, #fbf8f2 0%, #f0e8da 100%);
+    padding: 30px 20px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+/* For products whose source PNG has a solid white background baked in.
+   We swap the gradient for a flat white tile so the edges disappear. */
+.product-media.media-white {
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
+}
+.product-media img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.product-card:hover .product-media img { transform: scale(1.06); }
+.product-tag {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: var(--primary);
+    color: var(--gold-light);
+    padding: 4px 11px;
+    font-size: 9.5px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+}
+.product-body {
+    padding: 24px 22px 26px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.product-body .cat {
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.product-body h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.product-body .tagline {
+    color: var(--text-soft);
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+    font-weight: 300;
+    flex: 1;
+}
+.product-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+.product-foot .pack {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+.view-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    transition: gap .3s;
+}
+.product-card:hover .view-details { gap: 12px; }
+
+/* ============ SCIENCE STRIP ============ */
+.science {
+    background: linear-gradient(120deg, #0f3d3e, #0a2a2b);
+    color: #fff;
+    padding: 110px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.science::before {
+    content: '';
+    position: absolute;
+    top: 50%; right: -120px;
+    transform: translateY(-50%);
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,153,104,0.18), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.science-grid {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+.science-item {
+    padding: 36px 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: rgba(255,255,255,0.03);
+    transition: all .4s;
+}
+.science-item:hover {
+    border-color: rgba(184,153,104,0.6);
+    background: rgba(184,153,104,0.05);
+    transform: translateY(-6px);
+}
+.science-item .num {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold-light);
+    font-size: 34px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 16px;
+}
+.science-item h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.science-item p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14.5px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+/* ============ WHY DOCTORS ============ */
+.why-doctors { background: var(--ivory); }
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.why-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 38px 32px;
+    border-radius: 3px;
+    transition: all .4s;
+    position: relative;
+    overflow: hidden;
+}
+.why-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 3px; width: 0;
+    background: var(--gold);
+    transition: width .5s;
+}
+.why-card:hover::before { width: 100%; }
+.why-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+.why-card .icon-wrap {
+    width: 52px; height: 52px;
+    background: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.why-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.why-card p {
+    color: var(--text-soft);
+    font-size: 14.5px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+/* ============ TESTIMONIALS ============ */
+.testimonials {
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+}
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: -160px; right: -160px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,153,104,0.15), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.testimonials::after {
+    content: '';
+    position: absolute;
+    bottom: -160px; left: -160px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(15,61,62,0.08), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.testi-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.testi-card {
+    background: #fff;
+    padding: 42px 36px 34px;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid var(--line);
+    transition: all .45s cubic-bezier(.2,.8,.2,1);
+    display: flex;
+    flex-direction: column;
+}
+.testi-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--gold-light);
+}
+.testi-card::before {
+    content: '\201C';
+    position: absolute;
+    top: 14px; left: 28px;
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--gold);
+    opacity: 0.22;
+    line-height: 1;
+}
+
+.testi-rating {
+    display: flex;
+    gap: 3px;
+    color: var(--gold);
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.testi-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: var(--text);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    position: relative;
+    z-index: 2;
+}
+.testi-avatar {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+    color: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    border: 2px solid var(--gold-light);
+}
+.testi-meta { line-height: 1.3; }
+.testi-meta .name {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 3px;
+}
+.testi-meta .title {
+    display: block;
+    font-size: 11.5px;
+    color: var(--text-soft);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+.testi-meta .clinic {
+    display: block;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.testi-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    position: relative;
+    z-index: 2;
+}
+.testi-footer .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--line), transparent);
+    max-width: 180px;
+}
+.testi-footer .stat {
+    text-align: center;
+}
+.testi-footer .stat strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1;
+}
+.testi-footer .stat span {
+    display: block;
+    font-size: 11px;
+    color: var(--text-soft);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+/* ============ PARTNER / B2B ============ */
+.partner {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.partner::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: -80px;
+    width: 360px; height: 360px;
+    background: radial-gradient(circle, rgba(184,153,104,0.2), transparent 70%);
+    border-radius: 50%;
+}
+.partner-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.partner h2 {
+    color: #fff;
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+.partner h2 .italic { font-style: italic; color: var(--gold-light); font-weight: 500; }
+.partner .eyebrow {
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+.partner p {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 32px;
+    font-weight: 300;
+}
+.partner-list { list-style: none; margin-bottom: 36px; }
+.partner-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 14.5px;
+    color: rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.partner-list li::before {
+    content: '';
+    width: 22px; height: 1px;
+    background: var(--gold);
+}
+.partner-form {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 40px 34px;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+}
+.partner-form h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+.partner-form .form-sub {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.form-field {
+    margin-bottom: 16px;
+}
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 13px 16px;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: all .3s;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: rgba(255,255,255,0.4); }
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(255,255,255,0.09);
+}
+.form-field textarea { resize: vertical; min-height: 90px; }
+.partner-form button {
+    width: 100%;
+    background: var(--gold);
+    color: var(--primary-dark);
+    border: none;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 2px;
+}
+.partner-form button:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+/* ============ CONTACT ============ */
+.contact { background: var(--cream); }
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+.contact-card {
+    background: #fff;
+    padding: 38px 32px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid var(--line);
+    transition: all .4s;
+}
+.contact-card:hover {
+    border-color: var(--gold-light);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+.contact-card .icon {
+    width: 56px; height: 56px;
+    margin: 0 auto 20px;
+    background: var(--primary);
+    color: var(--gold-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+.contact-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+.contact-card p, .contact-card a {
+    color: var(--text);
+    font-size: 14.5px;
+    line-height: 1.7;
+    font-weight: 400;
+    transition: color .3s;
+}
+.contact-card a:hover { color: var(--gold); }
+
+/* ============ MODAL ============ */
+#productModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 42, 43, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+#productModal.active { display: flex; }
+
+.modal-content {
+    background: var(--ivory);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    overflow: hidden;
+    max-height: 92vh;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+    animation: modalIn .45s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(30px) scale(.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-media {
+    background: linear-gradient(180deg, #fbf8f2 0%, #ecdfc4 100%);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.modal-media.media-white {
+    background: #ffffff;
+    border-right: 1px solid var(--line);
+}
+.modal-media img {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+}
+.modal-tag {
+    position: absolute;
+    top: 20px; left: 20px;
+    background: var(--primary);
+    color: var(--gold-light);
+    padding: 5px 12px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.modal-body {
+    padding: 46px 44px;
+    overflow-y: auto;
+    max-height: 92vh;
+}
+.modal-body .cat {
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.modal-body h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+.modal-selling {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    padding: 16px 18px;
+    margin: 20px 0 24px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.7;
+    font-weight: 400;
+}
+.modal-body .desc {
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: var(--text-soft);
+    margin-bottom: 22px;
+    font-weight: 300;
+}
+.modal-block { margin-bottom: 20px; }
+.modal-block h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+.modal-block p, .modal-block span {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-soft);
+    font-weight: 300;
+}
+.modal-meta {
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-meta .pack {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.close {
+    position: absolute;
+    top: 14px; right: 16px;
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--primary);
+    z-index: 10;
+    transition: all .3s;
+    border: none;
+}
+.close:hover { background: var(--gold); color: #fff; transform: rotate(90deg); }
+
+/* ============ FOOTER ============ */
+footer {
+    background: #07201f;
+    color: rgba(255,255,255,0.7);
+    padding: 70px 40px 30px;
+}
+.footer-grid {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-col img { height: 60px; margin-bottom: 18px; filter: brightness(0) invert(1) opacity(0.95); }
+.footer-col p {
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    max-width: 280px;
+}
+.footer-col h5 {
+    font-family: 'Inter', sans-serif;
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 11px; }
+.footer-col a {
+    color: rgba(255,255,255,0.65);
+    font-size: 13.5px;
+    transition: color .3s;
+    font-weight: 300;
+}
+.footer-col a:hover { color: var(--gold-light); }
+.footer-bottom {
+    max-width: 1240px;
+    margin: 26px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ============ WHATSAPP FLOAT ============ */
+.whatsapp {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    background: #25D366;
+    color: #fff;
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 12px 30px rgba(37,211,102,0.45);
+    z-index: 999;
+    transition: all .3s;
+}
+.whatsapp:hover { transform: scale(1.1); box-shadow: 0 16px 40px rgba(37,211,102,0.6); }
+.whatsapp::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid #25D366;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); opacity: .7; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* ============ REVEAL ANIMATION ============ */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .9s cubic-bezier(.2,.8,.2,1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1100px) {
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
+    .trust-container { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+
+@media (max-width: 900px) {
+    .topbar { display: none; }
+    nav { padding: 14px 22px; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; right: 0; background: var(--ivory); padding: 30px; gap: 18px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); min-width: 240px; box-shadow: var(--shadow-md); }
+    .nav-links.open { display: flex; }
+    .hamburger { display: block; }
+    .section { padding: 70px 22px; }
+    .hero { padding: 70px 22px 90px; }
+    .hero-container { grid-template-columns: 1fr; gap: 50px; text-align: center; }
+    .hero-text .eyebrow, .hero-actions { justify-content: center; }
+    .hero-actions { display: flex; justify-content: center; }
+    .hero-text h1 { font-size: 38px; }
+    .hero-image::before { display: none; }
+    .hero-badge { left: 10px; bottom: 10px; }
+    .about-grid, .science-grid, .why-grid, .product-grid, .contact-grid, .partner-grid, .testi-strip { grid-template-columns: 1fr !important; gap: 30px; }
+    .testi-footer { flex-direction: column; gap: 22px; }
+    .testi-footer .line { max-width: 140px; }
+    .about-image { height: 360px; }
+    .about-image::before { font-size: 70px; }
+    .section-head h2, .about-text h2, .partner h2 { font-size: 32px; }
+    .about-pillars { grid-template-columns: 1fr; }
+    .modal-content { grid-template-columns: 1fr; max-height: 90vh; overflow-y: auto; }
+    .modal-media { padding: 30px; }
+    .modal-media img { max-height: 240px; }
+    .modal-body { padding: 30px 26px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 520px) {
+    .product-grid { grid-template-columns: 1fr; }
+    .trust-container { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-text h1 { font-size: 32px; }
+    .section-head h2, .about-text h2, .partner h2 { font-size: 28px; }
+    .btn { padding: 13px 22px; font-size: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="topbar-left">Dermatologically Advanced &middot; Clinically Proven</div>
+    <div class="topbar-right">
+        <span>&#9990; <a href="tel:+919082485099">+91 90824 85099</a></span>
+        <span>&#9993; <a href="mailto:skyntracare@gmail.com">skyntracare@gmail.com</a></span>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#top" class="logo">
+        <img src="images/skyntralogo.png" alt="Skyntra">
+    </a>
+    <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#science">Our Science</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#partner">For Clinicians</a>
+        <a href="#contact">Contact</a>
+        <a href="#partner" class="nav-cta">Partner With Us</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="hero-container">
+        <div class="hero-text reveal">
+            <span class="eyebrow">Dermatological Skin &amp; Hair Care</span>
+            <h1>
+                Advanced Dermacare,<br>
+                <span class="italic">Prescribed with Confidence.</span>
+            </h1>
+            <p class="lead">
+                Skyntra delivers clinically effective, result-oriented skin &amp; hair care solutions formulated for the modern dermatological practice &mdash; combining advanced actives, evidence-based science, and skin-friendly technology.
+            </p>
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">Explore Range &rarr;</a>
+                <a href="#partner" class="btn btn-outline">For Dermatologists</a>
+            </div>
+        </div>
+        <div class="hero-image reveal">
+            <img src="images/model.jpg" alt="Skyntra Premium Dermacare">
+            <div class="hero-badge">
+                <strong>08</strong>
+                <span>Clinical Formulations</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+    <div class="trust-container">
+        <div class="trust-item">
+            <div class="icon">&#x2713;</div>
+            <h4>Dermatologically Tested</h4>
+            <p>Rigorous safety &amp; efficacy protocols</p>
+        </div>
+        <div class="trust-item">
+            <div class="icon">&#x2022;</div>
+            <h4>Clinical-Grade Actives</h4>
+            <p>Research-backed concentrations</p>
+        </div>
+        <div class="trust-item">
+            <div class="icon">&#x25CA;</div>
+            <h4>Indian Skin Specific</h4>
+            <p>Formulated for our climate &amp; skin types</p>
+        </div>
+        <div class="trust-item">
+            <div class="icon">&#x2726;</div>
+            <h4>Made in India</h4>
+            <p>Manufactured under strict quality control</p>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <div class="badge-stat">
+                    <strong>Since<br>Inception</strong>
+                    <span>Dermatology. Science. Result.</span>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <span class="eyebrow">About Skyntra</span>
+                <h2>
+                    Where Dermatological <span class="italic">Science</span><br>
+                    Meets Everyday Clinical Care.
+                </h2>
+                <p>
+                    Skyntra is a modern dermatological skin &amp; hair care brand focused on delivering clinically effective, safe, and result-oriented solutions. Our formulations combine advanced actives, dermatological science and skin-friendly technology to address real skin concerns encountered in everyday practice.
+                </p>
+                <p>
+                    Designed for daily clinical care, Skyntra products help restore, protect and enhance healthy skin &mdash; supporting dermatologists with a full-spectrum range that can be confidently recommended and prescribed.
+                </p>
+                <div class="about-pillars">
+                    <div class="pillar">
+                        <span class="num">01</span>
+                        <h4>Evidence-Based</h4>
+                        <p>Formulations built on published dermatological research.</p>
+                    </div>
+                    <div class="pillar">
+                        <span class="num">02</span>
+                        <h4>Targeted Actives</h4>
+                        <p>Clinically proven concentrations, no unnecessary fillers.</p>
+                    </div>
+                    <div class="pillar">
+                        <span class="num">03</span>
+                        <h4>Daily Clinical Use</h4>
+                        <p>Suitable for long-term adjunct and maintenance therapy.</p>
+                    </div>
+                    <div class="pillar">
+                        <span class="num">04</span>
+                        <h4>Safe &amp; Gentle</h4>
+                        <p>Thoroughly tested for sensitive and compromised skin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section products">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Our Range</span>
+            <h2>The Complete <span class="italic">Skyntra</span> Formulary</h2>
+            <p>A comprehensive, dermatologist-first portfolio covering cleansing, hydration, photoprotection, pigmentation, scalp care, hair regrowth and body care &mdash; built for real clinical outcomes.</p>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card reveal" data-img="images/Skyntra Face mendalic.png" data-cat="SGL-ST2" data-name="Mandelic Acid (AHA) + Niacinamide Face Wash" data-tag="Exfoliate &middot; Clear" data-selling="Gently exfoliates, controls acne &amp; brightens skin for a clear, even-tone complexion." data-desc="An advanced dermatological cleanser that gently exfoliates dead skin cells, controls acne, oil &amp; clogged pores, helps reduce pigmentation and dark spots, and improves overall skin texture &amp; clarity." data-use="Oily &amp; acne-prone skin, breakouts, blackheads, excess oil. Combination skin that needs balancing without harsh stripping. Uneven tone or minor pigmentation dullness. Those new to chemical exfoliants or with sensitive skin." data-ingredients="Mandelic Acid (AHA), Niacinamide (Vitamin B3)." data-pack="125 ml &middot; 4.22 oz" data-price="399" data-type="Face Cleanser">
+                <div class="product-media">
+                    <span class="product-tag">Exfoliate &middot; Clear</span>
+                    <img src="images/Skyntra Face mendalic.png" alt="Mandelic Acid Face Wash">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SGL-ST2 &middot; Face Cleanser</div>
+                    <h3>Mandelic Acid + Niacinamide Face Wash</h3>
+                    <p class="tagline">Gentle AHA exfoliation with Niacinamide for acne control and even-tone clarity.</p>
+                    <div class="product-foot">
+                        <span class="pack">125 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/Skyntra Face Glutathione.png" data-cat="SMN-ST1" data-name="Glutathione Radiance Face Wash" data-tag="Brighten &middot; Radiance" data-selling="Glow-boosting cleanser with Glutathione, Kojic Acid &amp; Vitamin C that gently exfoliates, brightens skin and promotes a clear, radiant complexion." data-desc="A glutathione face wash with kojic acid, lactic acid, vitamin C and allantoin &mdash; formulated not only to cleanse but also to target dullness, uneven tone, pigmentation and boost radiance through a blend of active ingredients." data-use="Dull, uneven skin tone. Mild pigmentation or post-acne marks. Rough or flaky texture. Early signs of sun damage. Enhancing radiance." data-ingredients="Glutathione, Kojic Acid, Lactic Acid, Ascorbic Phosphate (Vitamin C), Allantoin." data-pack="125 ml &middot; 4.22 oz" data-price="399" data-type="Face Cleanser">
+                <div class="product-media">
+                    <span class="product-tag">Brighten &middot; Radiance</span>
+                    <img src="images/Skyntra Face Glutathione.png" alt="Glutathione Face Wash">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SMN-ST1 &middot; Face Cleanser</div>
+                    <h3>Glutathione Radiance Face Wash</h3>
+                    <p class="tagline">Glutathione, Kojic Acid &amp; Vitamin C for visible radiance and even tone.</p>
+                    <div class="product-foot">
+                        <span class="pack">125 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/Skyntra Face spf 50.png" data-cat="SBL-ST3" data-name="SPF 50 Sunscreen Body Lotion" data-tag="Photoprotection" data-selling="Advanced broad-spectrum SPF 50 / PA+++ protection with lightweight hydration for daily sun defence and smooth, healthy skin." data-desc="Skyntra SPF 50 Body Lotion is a dermatologically designed high-protection sunscreen moisturizer formulated to provide effective UVA &amp; UVB protection while maintaining optimal skin hydration. The formulation helps prevent photo-damage, tanning, pigmentation and sun-induced skin ageing caused by prolonged environmental exposure." data-use="Daily photoprotection for exposed body areas. Prevention of sun tanning &amp; uneven skin tone. Protection against UV-induced skin damage. Dry &amp; sun-sensitive skin management. Outdoor occupational or recreational exposure." data-ingredients="Titanium Dioxide, Octocrylene, Octyl Methoxycinnamate, Hyaluronic Acid, Ceramides, Allantoin." data-pack="200 ml &middot; 6.76 oz" data-price="449" data-type="Sunscreen Lotion">
+                <div class="product-media">
+                    <span class="product-tag">Photoprotection</span>
+                    <img src="images/Skyntra Face spf 50.png" alt="SPF 50 Sunscreen">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SBL-ST3 &middot; Sunscreen Lotion</div>
+                    <h3>SPF 50 Sunscreen Body Lotion</h3>
+                    <p class="tagline">Broad-spectrum UVA + UVB defence with ceramides and hyaluronic acid.</p>
+                    <div class="product-foot">
+                        <span class="pack">200 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/Skyntra Face Hydra moisturizer.png" data-cat="SML-ST4" data-name="Hydra V-B5 Moisturising Body Lotion" data-tag="Hydrate &middot; Repair" data-selling="Vitamin B5 powered hydration that repairs the skin barrier and locks in long-lasting moisture. Hydrates deeply, soothes skin and strengthens the moisture barrier." data-desc="A lightweight hydrating moisturizer formulated with Vitamin B5 (Panthenol) and skin-repairing hydrators that restore skin moisture, repair a damaged skin barrier, calm irritation &amp; redness and keep skin soft, smooth and healthy. Vitamin B5 works as both a humectant and emollient, attracting water into the skin and locking it in for lasting hydration." data-use="Dry &amp; dehydrated skin. Sensitive skin. Oily but dehydrated skin. Post-treatment skin (peels, laser, actives). Acne-prone skin needing hydration. Damaged skin barrier, redness and irritation." data-ingredients="D-Panthenol (Vitamin B5), Allantoin, Sodium Hyaluronate." data-pack="200 ml &middot; 6.76 oz" data-price="449" data-type="Moisturising Lotion">
+                <div class="product-media">
+                    <span class="product-tag">Hydrate &middot; Repair</span>
+                    <img src="images/Skyntra Face Hydra moisturizer.png" alt="Hydra Moisturizer">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SML-ST4 &middot; Moisturising Lotion</div>
+                    <h3>Hydra V-B5 Moisturising Body Lotion</h3>
+                    <p class="tagline">Panthenol + Sodium Hyaluronate for deep hydration and barrier repair.</p>
+                    <div class="product-foot">
+                        <span class="pack">200 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/Skyntra Face Anti dandruff shampoo.png" data-cat="SDS-ST5" data-name="Dual Action Anti-Dandruff Shampoo" data-tag="Antifungal Scalp" data-selling="Clinically effective dual-action formula with 2% Ketoconazole and 2% Zinc Pyrithione to eliminate dandruff, control scalp fungus, and relieve itching &amp; flaking." data-desc="Skyntra Dual Action Anti-Dandruff Shampoo is an antifungal scalp treatment shampoo specially formulated to treat moderate to severe dandruff and scalp infections. It combines Ketoconazole 2% and Zinc Pyrithione (ZPTO) which work together to eliminate the root cause of dandruff &mdash; Malassezia fungus &mdash; helping reduce flakes, itching, irritation and scalp inflammation." data-use="Moderate to severe dandruff. Seborrheic dermatitis. Fungal scalp infections. Persistent itching, flaking and scalp inflammation. Dandruff-related hair fall support." data-ingredients="Ketoconazole 2%, Zinc Pyrithione (ZPTO) 2%." data-pack="125 ml &middot; 4.22 oz" data-price="349" data-type="Anti-Dandruff Shampoo">
+                <div class="product-media">
+                    <span class="product-tag">Antifungal Scalp</span>
+                    <img src="images/Skyntra Face Anti dandruff shampoo.png" alt="Anti-Dandruff Shampoo">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SDS-ST5 &middot; Dandruff Shampoo</div>
+                    <h3>Dual Action Anti-Dandruff Shampoo</h3>
+                    <p class="tagline">2% Ketoconazole + 2% ZPTO for moderate to severe dandruff control.</p>
+                    <div class="product-foot">
+                        <span class="pack">125 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/Skyntra Face hair grow serum.png" data-cat="SHG-ST6" data-name="Minoxidil 5% Hair Growth Serum" data-tag="Hair Regrowth" data-selling="Advanced triple-action formula with Minoxidil 5%, Peptide Complex 5% &amp; Cococin 2% to reduce hair fall and stimulate faster, stronger hair regrowth." data-desc="A topical hair regrowth solution formulated with Minoxidil, Hair Growth Peptides and a Cococin complex that helps activate weak hair follicles, improve scalp circulation and promote thicker, stronger hair. Minoxidil works by widening blood vessels and increasing oxygen and nutrient supply to hair follicles, helping prevent follicle shrinkage and promoting regrowth in hair loss conditions." data-use="Male &amp; female pattern hair loss (androgenetic alopecia). Excessive hair fall and hair thinning. Receding hairline and crown baldness. Weak hair roots. Post-stress / post-illness hair shedding. Slow hair regrowth." data-ingredients="Minoxidil 5%, Peptide Complex 5%, Cococin 2%." data-pack="60 ml &middot; 2.02 oz" data-price="799" data-type="Hair Grow Serum">
+                <div class="product-media">
+                    <span class="product-tag">Hair Regrowth</span>
+                    <img src="images/Skyntra Face hair grow serum.png" alt="Hair Growth Serum">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SHG-ST6 &middot; Hair Grow Serum</div>
+                    <h3>Minoxidil 5% Hair Growth Serum</h3>
+                    <p class="tagline">Minoxidil + Peptides + Cococin for visible regrowth and reduced shedding.</p>
+                    <div class="product-foot">
+                        <span class="pack">60 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/White Bottle Under Arm Roll-on E-commerce Photo.png" data-cat="SUA-ST7" data-name="AHA BHA Under Arm Roll-On" data-tag="Underarm Care" data-selling="Glycolic &amp; Salicylic Acid with Licorice and Alum help reduce darkness, control odour and keep underarms fresh and smooth all day." data-desc="Skyntra Under Arm Roll-On is an advanced exfoliating &amp; odour-control underarm treatment designed to reduce body odour, underarm darkness, sweat discomfort and rough skin texture. It works as a derma-care deodorising roll-on combining AHA + BHA exfoliation with sweat-control minerals for clean, fresh and even-toned underarms. AHA/BHA-based roll-ons help control odour by lowering skin pH and reducing odour-causing bacteria while improving pigmentation and texture over time." data-use="Underarm darkening &amp; pigmentation. Strong body odour / sweating smell. Rough or bumpy underarms. Post-shaving or waxing discolouration. Daily freshness and hygiene care. Men &amp; Women." data-ingredients="Glycolic Acid (AHA), Salicylic Acid (BHA), Potassium Aluminum Sulfate (Alum), Licorice Extract." data-pack="50 ml &middot; 1.69 oz" data-price="349" data-type="Under Arm Roll-On">
+                <div class="product-media">
+                    <span class="product-tag">Underarm Care</span>
+                    <img src="images/White Bottle Under Arm Roll-on E-commerce Photo.png" alt="Underarm Roll-On">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SUA-ST7 &middot; Under Arm Roll-On</div>
+                    <h3>AHA BHA Under Arm Roll-On</h3>
+                    <p class="tagline">Exfoliates, lightens and controls odour with Glycolic + Salicylic Acid.</p>
+                    <div class="product-foot">
+                        <span class="pack">50 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-img="images/White Bottle E-commerce Photo (3).png" data-cat="SFC-ST8" data-name="20% Urea Foot Crack Cream Roll-On" data-tag="Heel Repair" data-selling="20% Urea intense hydration formula that softens cracked, dry feet and restores smooth skin with Urea, Propylene Glycol, Olive Oil &amp; Vitamin E." data-desc="Skyntra 20% Urea Foot Crack Cream Roll-On is an intensive heel repair &amp; foot moisturizing treatment specially formulated to soften dry, rough and cracked heels. It contains 20% Urea, a dermatologically proven ingredient that works as both a deep moisturizer and keratolytic exfoliant, helping remove dead skin buildup while restoring skin hydration. Urea attracts moisture into the skin and softens thickened heel skin for smoother feet. The roll-on applicator allows hygienic, mess-free and targeted application directly on cracked areas." data-use="Cracked heels &amp; foot fissures. Extremely dry &amp; rough feet. Hard, thickened heel skin. Calluses &amp; dead skin build-up. Dry feet care and daily foot repair." data-ingredients="Urea 20%, Lactic Acid, Glycerin, Vitamin E." data-pack="50 ml &middot; 1.69 oz" data-price="349" data-type="Foot Crack Cream">
+                <div class="product-media">
+                    <span class="product-tag">Heel Repair</span>
+                    <img src="images/White Bottle E-commerce Photo (3).png" alt="Foot Crack Cream">
+                </div>
+                <div class="product-body">
+                    <div class="cat">SFC-ST8 &middot; Crack Cream Roll-On</div>
+                    <h3>20% Urea Foot Crack Cream Roll-On</h3>
+                    <p class="tagline">Keratolytic + humectant action for softer, smoother heels.</p>
+                    <div class="product-foot">
+                        <span class="pack">50 ml</span>
+                    </div>
+                    <span class="view-details">View Details &rarr;</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SCIENCE STRIP -->
+<section id="science" class="science">
+    <div class="section-head reveal" style="margin-bottom: 60px;">
+        <span class="eyebrow" style="color: var(--gold-light);">Our Philosophy</span>
+        <h2 style="color:#fff;">Built on <span class="italic">Three Pillars</span> of Derma Science</h2>
+    </div>
+    <div class="science-grid">
+        <div class="science-item reveal">
+            <span class="num">01</span>
+            <h3>Advanced Actives</h3>
+            <p>Clinically validated concentrations &mdash; Mandelic Acid, Ketoconazole 2%, Minoxidil 5%, 20% Urea, Niacinamide, Glutathione &mdash; formulated at strengths proven in dermatological literature.</p>
+        </div>
+        <div class="science-item reveal">
+            <span class="num">02</span>
+            <h3>Dermatological Safety</h3>
+            <p>Every Skyntra formulation is engineered for tolerability &mdash; suitable for sensitive, compromised and post-procedure skin. Free of harsh stripping agents and unnecessary irritants.</p>
+        </div>
+        <div class="science-item reveal">
+            <span class="num">03</span>
+            <h3>Skin-Friendly Delivery</h3>
+            <p>Elegant textures and modern delivery systems &mdash; roll-ons, lightweight lotions, gentle cleansers &mdash; that improve patient compliance and long-term outcomes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHY DOCTORS -->
+<section class="section why-doctors">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">For the Clinician</span>
+            <h2>Why Dermatologists <span class="italic">Choose Skyntra</span></h2>
+            <p>A trusted adjunct to clinical practice &mdash; built to deliver results you can see, and patients keep coming back for.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x2713;</div>
+                <h3>Dermatologically Tested</h3>
+                <p>Every formulation is put through rigorous safety and efficacy evaluation for confident prescribing across skin types.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x2726;</div>
+                <h3>Treatment-Grade Actives</h3>
+                <p>Ingredients at therapeutic concentrations &mdash; designed as genuine adjuncts to dermatological care, not cosmetic alternatives.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x25CA;</div>
+                <h3>Safe for Long-Term Use</h3>
+                <p>Gentle, non-stripping formulations suitable for daily maintenance and chronic condition management.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x2022;</div>
+                <h3>Clinical Evidence</h3>
+                <p>Built around published research &mdash; from Minoxidil 5% for alopecia to Ketoconazole 2% for seborrheic dermatitis.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x2605;</div>
+                <h3>Patient Compliance</h3>
+                <p>Elegant textures, pleasant fragrance-free formulations and modern packaging &mdash; patients actually use the products.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="icon-wrap">&#x2756;</div>
+                <h3>Complete Formulary</h3>
+                <p>A full-spectrum range covering face, scalp, hair, body and foot care &mdash; one trusted brand for multiple clinical concerns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testimonials">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Clinician Reviews</span>
+            <h2>Trusted by <span class="italic">Dermatologists</span> Across India</h2>
+            <p>Skyntra is prescribed and recommended in dermatological practices nationwide. Here&rsquo;s what clinicians are saying about our formulations.</p>
+        </div>
+
+        <div class="testi-strip">
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    The Minoxidil 5% Hair Growth Serum has become a staple in my androgenetic alopecia protocol. Patient compliance is noticeably better because the formulation is lightweight and non-greasy &mdash; something most topical minoxidils struggle with.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">RK</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Ramesh Kulkarni</span>
+                        <span class="title">MD, Dermatology &middot; 12 yrs experience</span>
+                        <span class="clinic">Mumbai, Maharashtra</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    I&rsquo;ve been recommending the Mandelic Acid + Niacinamide face wash for my acne-prone patients with sensitive skin. It&rsquo;s gentle enough for daily use and delivers visible results within 3&ndash;4 weeks without the irritation we typically see with stronger AHAs.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">PS</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Priya Sharma</span>
+                        <span class="title">MBBS, DVD &middot; Consultant Dermatologist</span>
+                        <span class="clinic">Delhi NCR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    The Dual Action Anti-Dandruff Shampoo with Ketoconazole 2% + ZPTO is excellent for seborrheic dermatitis cases. My patients appreciate the elegant fragrance and texture &mdash; a clear upgrade from the older medicated options in the market.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">AV</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Anjali Verma</span>
+                        <span class="title">MD, Dermatology &amp; Trichology</span>
+                        <span class="clinic">Bengaluru, Karnataka</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    The Hydra V-B5 Moisturiser has been a game-changer for my post-procedure patients &mdash; especially after peels and laser sessions. Barrier repair is rapid and it calms redness almost immediately. I trust the consistent quality.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">SN</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Suresh Nair</span>
+                        <span class="title">MS, Cosmetic Dermatologist</span>
+                        <span class="clinic">Kochi, Kerala</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    Skyntra&rsquo;s SPF 50 body lotion is the only one I&rsquo;ve found that my patients actually enjoy applying daily. Broad-spectrum protection with hyaluronic acid and ceramides &mdash; it doubles up as a moisturiser and photoprotector in one step.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">MK</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Meera Khanna</span>
+                        <span class="title">MBBS, DDVL &middot; Skin &amp; Aesthetics</span>
+                        <span class="clinic">Pune, Maharashtra</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card reveal">
+                <div class="testi-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                <p class="testi-quote">
+                    The 20% Urea Foot Crack Cream roll-on has become my go-to for diabetic foot care and chronic heel fissures. The applicator is hygienic, the keratolytic action is reliable, and patients report softer heels within 10 days.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">VR</div>
+                    <div class="testi-meta">
+                        <span class="name">Dr. Vikram Reddy</span>
+                        <span class="title">MD, Dermatology &middot; Clinical Practice</span>
+                        <span class="clinic">Hyderabad, Telangana</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testi-footer reveal">
+            <div class="line"></div>
+            <div class="stat">
+                <strong>500+</strong>
+                <span>Dermatologists</span>
+            </div>
+            <div class="stat">
+                <strong>4.9</strong>
+                <span>Avg. Rating</span>
+            </div>
+            <div class="stat">
+                <strong>25+</strong>
+                <span>Cities</span>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTNER / B2B -->
+<section id="partner" class="partner">
+    <div class="partner-grid">
+        <div class="reveal">
+            <span class="eyebrow">For Clinicians &amp; Distributors</span>
+            <h2>Partner with <span class="italic">Skyntra</span></h2>
+            <p>
+                We work directly with dermatologists, clinics, aesthetic practices and pharmaceutical distributors across India. Request our professional catalogue, clinic pricing and sample kit &mdash; built for high-volume dermatological practice.
+            </p>
+            <ul class="partner-list">
+                <li>Dedicated clinic &amp; practice pricing</li>
+                <li>Professional training &amp; product literature</li>
+                <li>Sample kits for in-clinic patient trials</li>
+                <li>Distributor &amp; territory partnership programs</li>
+                <li>Responsive medical &amp; formulation support</li>
+            </ul>
+            <a href="mailto:skyntracare@gmail.com?subject=Partnership%20Enquiry%20-%20Skyntra" class="btn btn-primary">Request Catalogue &rarr;</a>
+        </div>
+        <div class="partner-form reveal">
+            <h3>Clinician Enquiry</h3>
+            <p class="form-sub">Tell us a bit about your practice and we&rsquo;ll be in touch within 24 hours.</p>
+            <form onsubmit="submitEnquiry(event)">
+                <div class="form-field"><input type="text" name="name" placeholder="Dr. Full Name" required></div>
+                <div class="form-field"><input type="text" name="clinic" placeholder="Clinic / Practice Name" required></div>
+                <div class="form-field"><input type="email" name="email" placeholder="Email Address" required></div>
+                <div class="form-field"><input type="tel" name="phone" placeholder="Contact Number" required></div>
+                <div class="form-field"><textarea name="message" placeholder="Your requirement (e.g. sample kit, catalogue, distribution)"></textarea></div>
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Get In Touch</span>
+            <h2>We&rsquo;d Love to <span class="italic">Hear From You</span></h2>
+            <p>For prescriptions, distribution, clinic partnership or product information &mdash; our team is here to help.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <div class="icon">&#9873;</div>
+                <h4>Visit Us</h4>
+                <p>E-1, Siddhvai Compound,<br>Vaishali Nagar, Dahisar East,<br>Mumbai &mdash; 400068, INDIA</p>
+            </div>
+            <div class="contact-card reveal">
+                <div class="icon">&#9990;</div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+919082485099">+91 90824 85099</a><br>Mon &mdash; Sat &middot; 10am to 7pm</p>
+            </div>
+            <div class="contact-card reveal">
+                <div class="icon">&#9993;</div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:skyntracare@gmail.com">skyntracare@gmail.com</a><br>For orders, partnerships &amp; enquiries</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL -->
+<div id="productModal" onclick="modalBgClose(event)">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal()" aria-label="Close">&#10005;</button>
+        <div class="modal-media">
+            <span class="modal-tag" id="modalTag">Clinical</span>
+            <img id="modalImg" alt="">
+        </div>
+        <div class="modal-body">
+            <div class="cat" id="modalCat">SGL-ST2 &middot; Face Cleanser</div>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-selling" id="modalSelling"></div>
+            <p class="desc" id="modalDesc"></p>
+            <div class="modal-block">
+                <h4>Indicated For</h4>
+                <p id="modalUse"></p>
+            </div>
+            <div class="modal-block">
+                <h4>Key Active Ingredients</h4>
+                <p id="modalIngredients"></p>
+            </div>
+            <div class="modal-meta">
+                <span class="pack" id="modalPack"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <img src="images/skyntralogo.png" alt="Skyntra">
+            <p>Dermatologically advanced skin &amp; hair care solutions &mdash; formulated with clinical science, trusted by modern dermatology.</p>
+        </div>
+        <div class="footer-col">
+            <h5>Explore</h5>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#science">Our Science</a></li>
+                <li><a href="#partner">For Clinicians</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Range</h5>
+            <ul>
+                <li><a href="#products">Face Cleansers</a></li>
+                <li><a href="#products">Hair &amp; Scalp</a></li>
+                <li><a href="#products">Sun &amp; Body</a></li>
+                <li><a href="#products">Specialty Care</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+                <li>E-1, Siddhvai Compound,<br>Vaishali Nagar, Dahisar East,<br>Mumbai &mdash; 400068</li>
+                <li><a href="tel:+919082485099">+91 90824 85099</a></li>
+                <li><a href="mailto:skyntracare@gmail.com">skyntracare@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Skyntra Dermacare. All rights reserved.</span>
+        <span>Formulated &amp; Made in India</span>
+    </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/919082485099?text=Hi%20Skyntra%2C%20I%27m%20a%20dermatologist%20interested%20in%20your%20product%20range." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+// ===== MODAL =====
+const modal = document.getElementById('productModal');
+
+function openModalFromCard(card) {
+    document.getElementById('modalImg').src = card.dataset.img;
+    document.getElementById('modalTitle').innerHTML = card.dataset.name;
+    document.getElementById('modalDesc').innerHTML = card.dataset.desc;
+    document.getElementById('modalUse').innerHTML = card.dataset.use;
+    document.getElementById('modalIngredients').innerHTML = card.dataset.ingredients;
+    document.getElementById('modalSelling').innerHTML = card.dataset.selling;
+    document.getElementById('modalTag').innerHTML = card.dataset.tag;
+    document.getElementById('modalCat').innerHTML = card.dataset.cat + ' &middot; ' + card.dataset.type;
+    document.getElementById('modalPack').innerHTML = card.dataset.pack;
+
+    const modalMedia = modal.querySelector('.modal-media');
+    if (card.dataset.white === '1') {
+        modalMedia.classList.add('media-white');
+    } else {
+        modalMedia.classList.remove('media-white');
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function modalBgClose(e) {
+    if (e.target.id === 'productModal') closeModal();
+}
+
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', () => openModalFromCard(card));
+});
+
+// ===== HAMBURGER =====
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+// ===== REVEAL ANIMATIONS =====
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+reveals.forEach(el => io.observe(el));
+
+// ===== FORM =====
+function submitEnquiry(e) {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const body = `Clinician Enquiry from ${data.get('name')}%0D%0A%0D%0AClinic: ${data.get('clinic')}%0D%0AEmail: ${data.get('email')}%0D%0APhone: ${data.get('phone')}%0D%0A%0D%0AMessage:%0D%0A${data.get('message') || '-'}`;
+    window.location.href = `mailto:skyntracare@gmail.com?subject=Clinician%20Enquiry%20-%20Skyntra&body=${body}`;
+}
+
+// ===== YEAR =====
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
